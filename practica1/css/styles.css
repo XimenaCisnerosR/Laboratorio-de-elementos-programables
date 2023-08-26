@@ -211,6 +211,8 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  border: solid #8aa8ef 2px;
+  border-radius:22px;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
