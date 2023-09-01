@@ -129,7 +129,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #231f20;
-  --bs-primary-rgb: 239, 64, 68;
+  --bs-primary-rgb: 41, 128, 185;
   --bs-secondary-rgb: 154, 139, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -211,6 +211,17 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
+  border: solid #dd5719 2px;
+  border-radius:22px;
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  color: #d83d0e;
+  text-align: center;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
 }
 @media (min-width: 1200px) {
   h2, .h2 {
@@ -7465,6 +7476,7 @@ textarea.form-control-lg {
 
 .me-4 {
   margin-right: 1.5rem !important;
+  
 }
 
 .me-5 {
@@ -7738,6 +7750,7 @@ textarea.form-control-lg {
 .fs-6 {
   font-size: 1rem !important;
   text-align: justify;
+  font-weight: bolder !important;
 }
 
 .fst-italic {
