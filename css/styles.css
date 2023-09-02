@@ -4731,6 +4731,10 @@ textarea.form-control-lg {
 .card-img-top {
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
+  width: 350px;
+	height: 300px;
+  margin:auto;
+
 }
 
 .card-img,
