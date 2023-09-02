@@ -7489,10 +7489,15 @@ textarea.form-control-lg {
 
 .mb-0 {
   margin-bottom: 0 !important;
+  text-align: justify;
+  font-family:'Times New Roman';
 }
 
 .mb-1 {
   margin-bottom: 0.25rem !important;
+  text-align: center;
+  font-family:'Times New Roman';
+  
 }
 
 .mb-2 {
@@ -7505,6 +7510,7 @@ textarea.form-control-lg {
 
 .mb-4 {
   margin-bottom: 1.5rem !important;
+  
 }
 
 .mb-5 {
@@ -7537,6 +7543,10 @@ textarea.form-control-lg {
 
 .ms-5 {
   margin-left: 3rem !important;
+}
+.ms-6 {
+  margin-left: 3rem !important;
+  color: rgb(27,103,207)
 }
 
 .ms-auto {
@@ -7745,12 +7755,15 @@ textarea.form-control-lg {
 
 .fs-5 {
   font-size: 1.25rem !important;
+  
 }
 
 .fs-6 {
   font-size: 1rem !important;
   text-align: justify;
   font-weight: bolder !important;
+  color: rgb(27,103,207);
+  font-family: Georgia;
 }
 
 .fst-italic {

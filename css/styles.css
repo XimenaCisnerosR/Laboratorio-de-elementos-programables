@@ -4090,7 +4090,7 @@ textarea.form-control-lg {
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #5289b9;
   background-color: transparent;
   border-color: transparent;
 }
@@ -7478,6 +7478,7 @@ textarea.form-control-lg {
 
 .mb-0 {
   margin-bottom: 0 !important;
+  text-align: justify;
 }
 
 .mb-1 {
