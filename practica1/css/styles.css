@@ -397,11 +397,14 @@ kbd kbd {
 
 figure {
   margin: 0 0 1rem;
+  
 }
 
-img,
-svg {
-  vertical-align: middle;
+img,svg {
+  
+  vertical-align: middle
+  ;
+  
 }
 
 table {
@@ -6104,6 +6107,7 @@ textarea.form-control-lg {
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
+
 .popover-header:empty {
   display: none;
 }
@@ -7761,11 +7765,13 @@ textarea.form-control-lg {
 }
 
 .fs-6 {
+
   font-size: 1rem !important;
   text-align: justify;
   font-weight: bolder !important;
   color: rgb(27,103,207);
   font-family: Georgia;
+ 
 }
 
 .fst-italic {
