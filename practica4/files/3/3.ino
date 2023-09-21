@@ -1,11 +1,11 @@
 // Codigo Attiny85
 //
+
+int flag=0;
   
 void setup()
 {
-  pinMode(2, OUTPUT); //Rojo
-  pinMode(1, OUTPUT); //Azul
-  pinMode(0, OUTPUT); //Verde
+  pinMode(2, OUTPUT);
   pinMode(3, INPUT);
   pinMode(4, INPUT);
 }
@@ -13,18 +13,22 @@ void setup()
 void loop()
 {
   if(digitalRead(3)==HIGH){
-    digitalWrite(2, HIGH);
+    flag=1;
   }
-  else if(digitalRead(4)==HIGH){
-    digitalWrite(1, HIGH);
+  
+  if(digitalRead(4)==HIGH){
+    flag=0;
+  }
+  
+  if(flag==1){
+    digitalWrite(2, HIGH);
+    delay(50);
+    digitalWrite(2, LOW);
   }
   else{
     digitalWrite(2, LOW);
-    digitalWrite(1, LOW);
-  }   
+  }
   
-  delay(100);
+  delay(50);
 }
-
-
 
