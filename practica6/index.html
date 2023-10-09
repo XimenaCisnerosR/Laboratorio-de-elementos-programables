@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 6 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-auto">Práctica 6: Sensores digitales, analógicos e inteligentes</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/xime.jpg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Ximena Cisneros Rosete</div>
+                                <div class="text-muted">Ingeniería Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Octubre 5, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Attiny85</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Sensores</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/sensores.jpeg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Resumen  </h2>
+                        <p class="card-text mb-0">En esta práctica lo que se realizó fue una práctica donde se ponian a prueba diferentes sensores, ya sean digitales, analógicos e inteligentes.</p>
+                        <p class="card-text mb-0">Es importante mencionar se siguió utilizando el Attiny85 y Arduino para programar. Con la diferencia que en este caso nosotros escribimos el código pertinente para hiciera lo que tenía que hacer la pantalla OLED.</p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Introducción  </h2>
+                        <p class="card-text mb-0">Es un dispositivo diseñado para captar un estímulo de su entorno y traducir esa información que recibe. Esa información recibida es normalmente  convertida a un impulso eléctrico que posteriormente es procesado por una serie de circuitos que generan una acción predeterminada en un aparato, sistema o máquina. Es un artefacto que en algunas aplicaciones transforma una clase de información en otra que se quiere medir o controlar.</p>
+                        <p class="card-text mb-0">El Microcontrolador ATTINY85 es usado en proyectos wearable y por supuesto en proyectos portables con los cuales podrás implementar los protocolos de comunicación más populares como SPI o I2C, incluso programarlos para PWM. Es practico para montajes pequeños en donde un Arduino queda muy sobrado (tanto en espacio físico y memoria).</p>
+                       
+                        
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Materiales  </h2>
+                        <p class="card-text mb-0">Para esta práctica solamente se utilizó un Arduino UNO, cables, Attiny85, 2 sensores digitales, 2 sensores analógicos y 2 inteligentes.</p>
+                        
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Desarrollo  </h2>
+                        <p class="card-text mb-0">Lo primero que se realizó fue programar el Arduino UNO para que se ocupara como un programador, de ahí se configuró para que el Attiny pudiera estar de alguna forma conectado con el Arduino, y de ahí se programo todo para que pudiera hacer lo que la actividad prendía.</p>
+                        <p class="card-text mb-0">Se tenía que programar los diferentes sensores para que se mostrara lo que hacian o cómo funcionaban. </p>
+                        
+                            <p id="simulacion">
+                            <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h2>
+                            <p class="card-text mb-0">A continuación se muestran las simulaciones realizadas: </p>
+                            <p class="fs-6 mb-6"> Sensores digitales:   </p>
+                            <p class="card-text mb-0">- Simulación del primer sensor digital, que cuando se aprieta el botón prende un LED </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/dig1.png" alt="..." /></figure>
+                            <p class="card-text mb-0">- Simulación del segundo sensor digital, que es un dipswitch, que al subir un switch se prende un LED y viceversa. </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/dig2.jpg" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/dig2.1.jpg" alt="..." /></figure>
+                            <p class="fs-6 mb-6"> Sensores analógicos:   </p>
+                            <p class="card-text mb-0">- Simulación del primer sensor analógico, que es un potenciometro, que al girar la perilla a su totalidad, se prende un LED </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana1.1.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana1.png" alt="..." /></figure>
+
+                            <p class="card-text mb-0">- Simulación del segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana2.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana2.1.png" alt="..." /></figure>
+                            <p class="fs-6 mb-6"> Sensores inteligentes:   </p>
+                            <p class="card-text mb-0">- Simulación del primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in1.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in1.1.png" alt="..." /></figure>
+
+                            <p class="card-text mb-0">- Simulación del segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in2.png" alt="..." /></figure>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in2.1.png" alt="..." /></figure>
+
+
+
+                            <p id="diseño">
+                            <h2 class="fw-bolder2 mb-4 mt-5 fs-5"> Programación </h2>
+                            <p class="card-text mb-0">A continuación se muestran las programaciones realizadas: </p>
+                            <p class="fs-6 mb-6"> Sensores digitales:   </p>
+                            <p class="card-text mb-0">- Programación primer sensor digital, que cuando se aprieta el botón prende un LED </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pd1.png alt="..." /></figure>
+                            <p class="card-text mb-0">- Programación segundo sensor digital, que es un dipswitch, que al subir un switch se prende un LED y viceversa. </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pd2.png" alt="..." /></figure>
+                            
+                            <p class="fs-6 mb-6"> Sensores analógicos:   </p>
+                            <p class="card-text mb-0">- Programación primer sensor analógico, que es un potenciometro, que al girar la perilla a su totalidad, se prende un LED </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pa1.png" alt="..." /></figure>
+                           
+
+                            <p class="card-text mb-0">- Programación segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pa2.png" alt="..." /></figure>
+                          
+                            <p class="fs-6 mb-6"> Sensores inteligentes:   </p>
+                            <p class="card-text mb-0">- Programación primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED</p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pi1.png" alt="..." /></figure>
+                           
+
+                            <p class="card-text mb-0">- Programación segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no </p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pi2.png" alt="..." /></figure>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Resultados  </h2>
+                    
+                        <p class="card-text mb-0">A continuación se muestran unos videos de las simulaciones ya realizadas en el laboratorio: </p>
+                        <p class="card-text mb-0">En todos los videos se puede visualizar lo que se tenía que ver en el la simulación, por lo que los resultados fueron exitosos; es importante mencionar que el ejercicio del potenciometro estaba mal conectado en la simulacion, por lo que se tuvieron que mover algunos cables y ya funcionó correctamente.</p>
+                        
+                            <p class="fs-6 mb-6"> Sensores digitales:   </p>
+                            <p class="card-text mb-0">- Primer sensor digital, que cuando se aprieta el botón prende un LED </p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/dig1.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <p class="card-text mb-0">- Segundo sensor digital, que es un dipswitch, que al subir un switch se prende un LED y viceversa. </p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/dig2.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-6"> Sensores analógicos:   </p>
+                            <p class="card-text mb-0">- Primer sensor analógico, que es un potenciometro, que al girar la perilla a su totalidad, se prende un LED </p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/ana1.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                            <p class="card-text mb-0">- Segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED </p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/an2.1.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/an2.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="fs-6 mb-6"> Sensores inteligentes:   </p>
+                            <p class="card-text mb-0">- Primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED</p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/in1.mp4" type="video/mp4">
+                            </video></p></figure>
+                            <p class="card-text mb-0">- Segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no </p>
+                            <figure class="mb-4" align="center"><video width="80%"  controls>
+                                <source src="video/in2.mp4" type="video/mp4">
+                            </video></p></figure>
+
+                    
+                        
+                        <p class="card-text mb-1">En esta primera actividad lo que se realizó fue que con un botón se prende el LED y con otro se apaga.</p>
+
+                        
+                       
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Conclusiones </h2>
+                        <p class="card-text mb-0">Se puede concluir que esta práctica ayudó demasiado en el poder entender el funcionamiento del Attiny85, pero más que eso logré comprender como funcionaba la pantalla OLED y configurarlo con el botón. </p>
+                        <p class="card-text mb-0">De igual forma, el repasar esos conceptos te ayuda a recordar en como un botón le manda una instrucción al OLED, por medio de la programación.</p>
+                        
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Referencias </h2>
+                        <p class="card-text mb-0">* Lozano, R. (2020, July 19). Pantalla oled i2c. Retrieved October 3, 2023, from Talos Electronics website: https://www.taloselectronics.com/blogs/tutoriales/pantalla-oled-i2c</p>
+                        <p class="card-text mb-0">* ¿Qué es Arduino? | Arduino.cl - Compra tu Arduino en Línea. (2014, November 20). Retrieved August 27, 2023, from Arduino.cl - Compra tu Arduino en Línea website: https://arduino.cl/que-es-arduino/</p>
+                        <p class="card-text mb-0">* ATTINY85 20PU DIP8 Microcontrolador - UNIT Electronics. (2023, September 18). Retrieved September 21, 2023, from UNIT Electronics website: https://uelectronics.com/producto/attiny85-20pu-dip8-microcontrolador/</p>
+
+‌
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-5 mb-0">Entrar a las simulaciones de Arduino <a href="https://www.tinkercad.com/joinclass/THFNAX84SDIQ">Link Thinkercad</a> </p>
+                        <p class="fs-5 mb-0">Descargar codigo ejercicio 1: <a href="files/1/1.ino">codigo1.ino</a> </p>
+                    
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
