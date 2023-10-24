@@ -81,7 +81,7 @@
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Resumen  </h2>
                         <p class="card-text mb-0">En esta práctica lo que se realizó fue una práctica donde se ponian a prueba diferentes sensores, ya sean digitales, analógicos e inteligentes.</p>
-                        <p class="card-text mb-0">Es importante mencionar se siguió utilizando el Attiny85 y Arduino para programar. Con la diferencia que en este caso nosotros escribimos el código pertinente para hiciera lo que tenía que hacer la pantalla OLED.</p>
+                        <p class="card-text mb-0">Es importante mencionar se siguió utilizando el Attiny85 y Arduino para programar. Con la diferencia que en este caso nosotros escribimos el código pertinente para que los sensores funcionaran correctamente.</p>
                         <p class="card-text mb-0">Para esta práctica se solicito una tabla de 30 sensores diferentes, a continuación es la que se muestra:</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/t1.png" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/t2.png" alt="..." /></figure>
@@ -89,19 +89,25 @@
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/t4.png" alt="..." /></figure>
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Introducción  </h2>
-                        <p class="card-text mb-0">Es un dispositivo diseñado para captar un estímulo de su entorno y traducir esa información que recibe. Esa información recibida es normalmente  convertida a un impulso eléctrico que posteriormente es procesado por una serie de circuitos que generan una acción predeterminada en un aparato, sistema o máquina. Es un artefacto que en algunas aplicaciones transforma una clase de información en otra que se quiere medir o controlar.</p>
+                        <p class="card-text mb-0">Un sensor es un dispositivo diseñado para captar un estímulo de su entorno y traducir esa información que recibe. Esa información recibida es normalmente  convertida a un impulso eléctrico que posteriormente es procesado por una serie de circuitos que generan una acción predeterminada en un aparato, sistema o máquina. Es un artefacto que en algunas aplicaciones transforma una clase de información en otra que se quiere medir o controlar.Existen tres tipos de sensores principales, los cuales son los digitales, analógicos y los inteligentes. Los sensores digitales son aquellos que los cambios en el entorno se mostraran digitalmente, es decir que solo hay dos estados o detectado=1 o no detectado= 0. </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/d.png" alt="..." /></figure>
+                        
+                        <p class="card-text mb-0">Los sensores analógicos son los que muestran mas estados de funcionamientos, ya que puede escalarse y obtener un valor real; por ejemplo: un sensor de temperatura te muestra los grados que esta recibiendo.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/a.png" alt="..." /></figure>
+                        <p class="card-text mb-0">Los sensores inteligentes son los que toman datos del entorno físico utilizando recursos informaticos integrados que realizaran funciones ya previamente establecidos. </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/i.jpg" alt="..." /></figure>
+                        
                         <p class="card-text mb-0">El Microcontrolador ATTINY85 es usado en proyectos wearable y por supuesto en proyectos portables con los cuales podrás implementar los protocolos de comunicación más populares como SPI o I2C, incluso programarlos para PWM. Es practico para montajes pequeños en donde un Arduino queda muy sobrado (tanto en espacio físico y memoria).</p>
-                       
                         
                         <p id="materiales">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Materiales  </h2>
-                        <p class="card-text mb-0">Para esta práctica solamente se utilizó un Arduino UNO, cables, Attiny85, 2 sensores digitales, 2 sensores analógicos y 2 inteligentes.</p>
+                        <p class="card-text mb-0">Para esta práctica solamente se utilizó un Arduino UNO, cables, Attiny85, 2 sensores digitales (botón y dipswitch), 2 sensores analógicos (potenciometro y sensor de temperatura) y 2 inteligentes (ultrasónico y de humedad).</p>
                         
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Desarrollo  </h2>
                         <p class="card-text mb-0">Lo primero que se realizó fue programar el Arduino UNO para que se ocupara como un programador, de ahí se configuró para que el Attiny pudiera estar de alguna forma conectado con el Arduino, y de ahí se programo todo para que pudiera hacer lo que la actividad prendía.</p>
-                        <p class="card-text mb-0">Se tenía que programar los diferentes sensores para que se mostrara lo que hacian o cómo funcionaban. </p>
+                        <p class="card-text mb-0">Se tenía que programar los diferentes sensores para que se mostrara lo que hacian o cómo funcionaban. Posteriormente en la simulación se muestra como se debe conectar cada uno de ellos, y en programación el como conectarlos.</p>
                         
                             <p id="simulacion">
                             <h2 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h2>
@@ -117,15 +123,15 @@
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana1.1.png" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana1.png" alt="..." /></figure>
 
-                            <p class="card-text mb-0">- Simulación del segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED </p>
+                            <p class="card-text mb-0">- Simulación del segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED, no obstante es importante mencionar que en la simulación no encendia el LED a su totalidad, pero en ya la práctica si encendía bien. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana2.png" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/ana2.1.png" alt="..." /></figure>
                             <p class="fs-6 mb-6"> Sensores inteligentes:   </p>
-                            <p class="card-text mb-0">- Simulación del primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED</p>
+                            <p class="card-text mb-0">- Simulación del primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in1.png" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in1.1.png" alt="..." /></figure>
 
-                            <p class="card-text mb-0">- Simulación del segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no </p>
+                            <p class="card-text mb-0">- Simulación del segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no, no obstante en la simulación lo hicimos para que encendiera el LED del ARDUINO. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in2.png" alt="..." /></figure>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/in2.1.png" alt="..." /></figure>
 
@@ -135,36 +141,36 @@
                             <h2 class="fw-bolder2 mb-4 mt-5 fs-5"> Programación </h2>
                             <p class="card-text mb-0">A continuación se muestran las programaciones realizadas: </p>
                             <p class="fs-6 mb-6"> Sensores digitales:   </p>
-                            <p class="card-text mb-0">- Programación primer sensor digital, que cuando se aprieta el botón prende un LED </p>
+                            <p class="card-text mb-0">- Programación primer sensor digital, que cuando se aprieta el botón prende un LED. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pd1.png"..." /></figure>
                             <p class="card-text mb-0">- Programación segundo sensor digital, que es un dipswitch, que al subir un switch se prende un LED y viceversa. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pd2.png" alt="..." /></figure>
                             
                             <p class="fs-6 mb-6"> Sensores analógicos:   </p>
-                            <p class="card-text mb-0">- Programación primer sensor analógico, que es un potenciometro, que al girar la perilla a su totalidad, se prende un LED </p>
+                            <p class="card-text mb-0">- Programación primer sensor analógico, que es un potenciometro, que al girar la perilla a su totalidad, se prende un LED. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pa1.png" alt="..." /></figure>
                            
 
-                            <p class="card-text mb-0">- Programación segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED </p>
+                            <p class="card-text mb-0">- Programación segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pa2.png" alt="..." /></figure>
                           
                             <p class="fs-6 mb-6"> Sensores inteligentes:   </p>
-                            <p class="card-text mb-0">- Programación primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED</p>
+                            <p class="card-text mb-0">- Programación primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED.</p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pi1.png" alt="..." /></figure>
                            
 
-                            <p class="card-text mb-0">- Programación segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no </p>
+                            <p class="card-text mb-0">- Programación segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no. </p>
                             <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/pi2.png" alt="..." /></figure>
                             
 
                         <p id="resultados">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Resultados  </h2>
                     
+                       
+                        <p class="card-text mb-0">En todos los videos se puede visualizar lo que se tenía que ver en el la simulación, por lo que los resultados fueron exitosos.</p>
                         <p class="card-text mb-0">A continuación se muestran unos videos de las simulaciones ya realizadas en el laboratorio: </p>
-                        <p class="card-text mb-0">En todos los videos se puede visualizar lo que se tenía que ver en el la simulación, por lo que los resultados fueron exitosos; es importante mencionar que el ejercicio del potenciometro estaba mal conectado en la simulacion, por lo que se tuvieron que mover algunos cables y ya funcionó correctamente.</p>
-                        
                             <p class="fs-6 mb-6"> Sensores digitales:   </p>
-                            <p class="card-text mb-0">- Primer sensor digital, que cuando se aprieta el botón prende un LED </p>
+                            <p class="card-text mb-0">- Primer sensor digital, que cuando se aprieta el botón prende un LED. </p>
                             <figure class="mb-4" align="center"><video width="80%"  controls>
                                 <source src="video/dig1.mp4" type="video/mp4">
                             </video></p></figure>
@@ -174,12 +180,12 @@
                                 <source src="video/dig2.mp4" type="video/mp4">
                             </video></p></figure>
                             <p class="fs-6 mb-6"> Sensores analógicos:   </p>
-                            <p class="card-text mb-0">- Primer sensor analógico, que es un potenciometro, que al girar la perilla a su totalidad, se prende un LED </p>
+                            <p class="card-text mb-0">- Primer sensor analógico, que es un potenciometro, que al girar la perilla a su totalidad, se prende un LED. </p>
                             <figure class="mb-4" align="center"><video width="80%"  controls>
                                 <source src="video/ana1.mp4" type="video/mp4">
                             </video></p></figure>
 
-                            <p class="card-text mb-0">- Segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED </p>
+                            <p class="card-text mb-0">- Segundo sensor analógico, que es un sensor de temperatura, que a 25° o mas se enciende el LED. </p>
                             <figure class="mb-4" align="center"><video width="80%"  controls>
                                 <source src="video/an2.1.mp4" type="video/mp4">
                             </video></p></figure>
@@ -187,25 +193,25 @@
                                 <source src="video/an2.mp4" type="video/mp4">
                             </video></p></figure>
                             <p class="fs-6 mb-6"> Sensores inteligentes:   </p>
-                            <p class="card-text mb-0">- Primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED</p>
+                            <p class="card-text mb-0">- Primer sensor inteligente, que es un sensor ultrasónico, que cuando se acerca algo a 5 cm o menos, se enciende un LED.</p>
                             <figure class="mb-4" align="center"><video width="80%"  controls>
                                 <source src="video/in1.mp4" type="video/mp4">
                             </video></p></figure>
-                            <p class="card-text mb-0">- Segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no </p>
+                            <p class="card-text mb-0">- Segundo sensor analógico, que es un sensor de humedad, que al revasar 25° de humedad se prende un LED, en caso contrario no. </p>
                             <figure class="mb-4" align="center"><video width="80%"  controls>
                                 <source src="video/in2.mp4" type="video/mp4">
                             </video></p></figure>
 
                     
                         
-                        <p class="card-text mb-1">En esta primera actividad lo que se realizó fue que con un botón se prende el LED y con otro se apaga.</p>
+                     
 
                         
                        
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Conclusiones </h2>
-                        <p class="card-text mb-0">Se puede concluir que esta práctica ayudó demasiado en el poder entender el funcionamiento del Attiny85, pero más que eso logré comprender como funcionaba la pantalla OLED y configurarlo con el botón. </p>
-                        <p class="card-text mb-0">De igual forma, el repasar esos conceptos te ayuda a recordar en como un botón le manda una instrucción al OLED, por medio de la programación.</p>
+                        <p class="card-text mb-0">Se puede concluir que esta práctica ayudó demasiado a poder entender como funcionan los diferentes sensores, ya que en lo personal nunca habia programado alguno, hasta a penas y me gusto mucho el hecho de que todos funcionaron casi a la primera. </p>
+                        <p class="card-text mb-0">De igual forma, el estudiar como funcionan los diferentes sensores, nos esta ayudando demasiado para lo que es el proyecto final, ya que ya tenemos este conocimiento previo para aplicarlo en el werable.</p>
                         
 
                         <p id="referencias">
