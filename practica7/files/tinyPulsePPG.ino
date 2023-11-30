@@ -12,11 +12,6 @@
 #include <EEPROM.h>
 #include <avr/sleep.h>
 #include <avr/wdt.h>
-#include <avr/io.h>
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
-
 
 // Routines to clear and set bits 
 #ifndef cbi
@@ -36,22 +31,6 @@ MAFilter bpm;
 #define LED 1
 #define BUTTON 3
 #define OPTIONS 7
-// Definición de pines temperatura
-#define PIN_RESET 0
-#define PIN_SDA 1
-#define PIN_SCL 2
-// Definición del sensor de temperatura
-#define PIN_SENSOR 0
-
-// Definición de la pantalla OLED
-#define OLED_ADDR 0x3C
-Adafruit_SSD1306 oled(OLED_ADDR, PIN_SDA, PIN_SCL);
-
-// Variables
-float temperatura;
-
-
-
 
 static const uint8_t heart_bits[] PROGMEM = { 0x00, 0x00, 0x38, 0x38, 0x7c, 0x7c, 0xfe, 0xfe, 0xfe, 0xff, 
                                         0xfe, 0xff, 0xfc, 0x7f, 0xf8, 0x3f, 0xf0, 0x1f, 0xe0, 0x0f,
@@ -244,20 +223,6 @@ void setup(void) {
   sbi(GIMSK, PCIE); // set up pin change interrupt
   sbi(PCMSK, PCINT3);
   sei();
-  Wire.begin();
-  oled.begin();
-
-  // Inicializa el sensor de temperatura
-  Wire.beginTransmission(0x5A);
-  Wire.write(0x00);
-  Wire.write(0x02);
-  Wire.endTransmission();
-}
-
-
-
-
-
 }
 
 long lastBeat = 0;    //Time of the last beat 
@@ -266,8 +231,6 @@ bool led_on = false;
 
 
 void loop()  {
-
-  if(boton ==1 ){
     sensor.check();
     long now = millis();   //start time of this cycle
     if (!sensor.available()) return;
@@ -331,26 +294,4 @@ void loop()  {
         digitalWrite(LED, LOW);
         led_on = false;
      }
-}
-if(boton=2){
-// Lee la temperatura del sensor
-  Wire.beginTransmission(0x5A);
-  Wire.write(0x00);
-  Wire.endTransmission();
-  Wire.requestFrom(0x5A, 2);
-  temperatura = Wire.read() << 8 | Wire.read();
-  temperatura = temperatura / 16.5;
-
-  // Muestra la temperatura en la pantalla OLED
-  oled.clearDisplay();
-  oled.setCursor(0, 0);
-  oled.print("Temperatura: ");
-  oled.print(temperatura);
-  oled.print(" C");
-  oled.display();
-
-  // Espera 1 segundo
-  delay(1000);
-
-}
 }
