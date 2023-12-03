@@ -80,7 +80,7 @@
                                 
                     <p id="resumen">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Resumen  </h2>
-                        <p class="card-text mb-0">En este proyecto final, lo que se realizo fue el poder porgramar tres sensores con el Attiny85, en el cual se realizó dos wearable, uno para un humano en el que se le mide la frecuencía cardiáca y oxigenación; y el otro werable es para mascotas en el que se mide la temperatura que tiene para los paseos( principalmente para evitar golpes de calor).</p>
+                        <p class="card-text mb-0">En el marco de este proyecto final, se llevó a cabo la programación del Attiny85 para gestionar tres sensores diferentes, destacándose dos wearables específicos. El primero, diseñado para humanos, integra el sensor Max30102 para medir la frecuencia cardíaca y la oxigenación, proporcionando un dispositivo de monitoreo de la salud cardiovascular en tiempo real. El segundo wearable está destinado a mascotas y utiliza el sensor GY-906 MLX90614 para medir la temperatura durante los paseos, preveniendo posibles golpes de calor. Ambos wearables fueron diseñados considerando la ergonomía y la practicidad, asegurando comodidad tanto para humanos como para animales. Este proyecto no solo resalta las habilidades de programación del Attiny85, sino que también aborda aplicaciones específicas que van desde el cuidado de la salud humana hasta la protección de las mascotas en situaciones particulares, evidenciando la versatilidad y utilidad de la tecnología implementada.</p>
                         
                         <p id="intro">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5" >  - Introducción  </h2>
@@ -106,17 +106,36 @@
                         
                         <p id="desarrollo">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Desarrollo  </h2>
-                        <p class="card-text mb-0">1.Lo primero que se realizó investigar la "Data sheet" de cada uno de los sensores para poder verificar como se colocan los pines, cual es el voltaje adecuado, o de que manera se tienen que colocar correctamente.</p>
-                        <p class="card-text mb-0">2.Se colocó todas las conexiones que encontramos en un protoboard, de manera que pudieramos checar que todo funciona correctamente.</p>
-                        <p class="card-text mb-0">3. Hicimos nuestras propias programaciones, las cuales se encuentran en el apartado de documentos.</p>
-                        <p class="card-text mb-0">4. Hicimos nuestra PCB por medio de un método llamado como "método de planchado", el cual tuvimos que realizar nuestros circuitos en Altium Designer y despues seguimos los pasos de un video que nos compartio el profesor Huber que se encuentra en el apartado de documentos.</p>
+                        <p class="card-text mb-0">1.Investigación de la "Data sheet": La primera etapa del proyecto consistió en realizar una investigación detallada de la hoja de datos ("Data sheet") de cada uno de los sensores utilizados, en este caso, el Max30102 y el GY-906 MLX90614. Esta investigación permitió obtener información crucial, como la disposición correcta de los pines, el voltaje de operación recomendado y cualquier otra especificación relevante para el correcto funcionamiento de los sensores.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/1.png" alt="..." /></figure>
+                        
+                        <p class="card-text mb-0">2.Conexiones en el Protoboard: Una vez recopilada la información de las hojas de datos, se procedió a realizar las conexiones iniciales en un protoboard. Esta etapa tenía como objetivo principal verificar la viabilidad del proyecto y asegurarse de que todos los componentes interactuaran correctamente. El protoboard sirvió como plataforma de prueba donde se pudieron realizar ajustes y correcciones antes de pasar a la fase de implementación en la PCB.</p>
+                        
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/2.jpg" alt="..." /></figure>
+                        
+                        <p class="card-text mb-0">3.Desarrollo de Programaciones Personalizadas: Con las conexiones confirmadas en el protoboard, se procedió a desarrollar las programaciones necesarias para el Attiny 85, el cual actuaba como el controlador del sistema. Estas programaciones fueron adaptadas a las especificidades de los sensores Max30102 y GY-906 MLX90614, asegurando una comunicación efectiva y la obtención precisa de datos.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/33.png" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/333.png" alt="..." /></figure>
+                        <p class="card-text mb-0">4.Creación de PCB con Método de Planchado: La última fase del proyecto involucró la creación de una PCB personalizada utilizando el método de planchado. Inicialmente, se diseñaron los circuitos en Altium Designer, una herramienta de diseño de PCB. Luego, se siguieron los pasos proporcionados en un video recomendado por el profesor Huber, que detallaba el proceso de planchado. Este método implica la transferencia de la imagen del circuito a una placa de cobre mediante calor, creando una versión física del diseño.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/4.png" alt="..." /></figure>
                         <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/FZXE9Y8LPL7HNZJ.png" alt="..." /></figure>
                         <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/FLGRZUPLPL7HNZI.png" alt="..." /></figure>
-                        <p class="card-text mb-0">5. Diseñamos en SolidWorks la carcasa de nuestro wearable, de manera que se pudiera proteger todo el circuito; estas mismas fueron impresas en una impresora 3D.</p>
+                        <p class="card-text mb-0">Diseño de la Carcasa en SolidWorks y Fabricación con Impresora 3D:
+                            La fase de diseño de la carcasa en SolidWorks representó un paso crucial para la integridad y estética del proyecto. Aquí se detallan los aspectos clave de esta etapa:
+                            <p class="card-text mb-0">  -</p>
+                            <p class="card-text mb-0"> * Elección del Software de Diseño: SolidWorks, un software de diseño asistido por computadora (CAD), fue la herramienta seleccionada para modelar la carcasa. Este software es conocido por su capacidad para crear modelos 3D detallados y precisos, proporcionando un entorno virtual donde se pueden visualizar y ajustar todos los componentes.</p>
+                            
+                                <p class="card-text mb-0"> * Consideraciones para la Protección del Circuito: Durante el diseño, se tuvieron en cuenta factores como la disposición adecuada de los componentes dentro de la carcasa, la ubicación de aberturas para sensores y puertos de conexión, y la creación de una estructura que protegiera eficazmente el circuito interno contra posibles daños externos.</p>
+                             
+                                    <p class="card-text mb-0"> * Optimización para la Fabricación en Impresora 3D: El diseño tuvo en cuenta las características y limitaciones de la impresión 3D. Se optimizaron los ángulos, soportes y geometría para asegurar una impresión exitosa y eficiente. Además, se consideraron detalles como la posibilidad de impresión en varias piezas que se ensamblarían posteriormente.</p>
+                            
+                                        <p class="card-text mb-0">* Impresión 3D: Después de finalizar el diseño en SolidWorks, se procedió a la fabricación física de la carcasa utilizando una impresora 3D. Este proceso implica la deposición de capas sucesivas de material (generalmente plástico) para construir el objeto tridimensional. Durante la impresión, se aplicaron parámetros específicos, como tipo de material, densidad de impresión y velocidad, para obtener un resultado final óptimo.</p>
+                            
+                                            <p class="card-text mb-0">* Ensamblaje y Acabado: Una vez impresas todas las partes de la carcasa, se llevaron a cabo las fases de ensamblaje. Esto puede incluir la unión de piezas impresas, la integración de cierres o mecanismos de apertura, y la preparación de la carcasa para recibir los componentes electrónicos. También se consideraron aspectos estéticos y funcionales durante esta fase.</p>
                         <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/FDZE0QMLPL7MOK5.png" alt="..." /></figure>
                         <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/FYUBPPALPL7MOK6.png" alt="..." /></figure>
                         <p class="card-text mb-0">6. Conectamos la PCB y comprobamos que todo funcionara correctamente.</p>
-
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Soft Purple Modern Smart Watch Billboard Web Ad (5).png" alt="..." /></figure>
 
                         </video></p></figure>
                             <p id="simulacion">
@@ -148,8 +167,15 @@
                        
                         <p id="conclusiones">
                         <h2 class="fw-bolder mb-4 mt-5 fs-5">  - Conclusiones </h2>
-                        <p class="card-text mb-0">Se puede concluir que práctica o proyecto final, se entendieron correctamente los funcionamientos de los sensores y de lo que sería el Attiny 85, ya que se lograron programar los tres para llevarlo a un producto final como lo que es un werable.</p>
-                        <p class="card-text mb-0">De igual forma, al realizar esta práctica se pudo repasar varios de los conceptos que te ayudan a recordar en como un botón le manda una instrucción al OLED, por medio de la programación y de algunas veces botones o buzzers.</p>
+                        <p class="card-text mb-0">
+                            En conclusión, el desarrollo de un wearable con un sensor Max30102, un sensor GY-906 MLX90614, programado y controlado por un Attiny 85, y la creación de un PCB utilizando el método de planchado ha sido una experiencia sumamente enriquecedora. El proyecto ha demostrado ser exitoso, ya que todos los componentes funcionaron según lo previsto.
+                            
+                            La elección de utilizar el sensor Max30102 para la medición de pulsaciones y el sensor GY-906 MLX90614 para la temperatura ha permitido obtener datos precisos y relevantes para el propósito del wearable. La implementación del Attiny 85 como controlador muestra eficiencia en la gestión de los datos recopilados y en la comunicación entre los sensores y otros dispositivos.
+                            
+                            La decisión de crear un PCB mediante el método de planchado ha sido una estrategia efectiva, permitiendo una fabricación personalizada y de bajo costo. A pesar de los desafíos inherentes al proceso, la experiencia ha resultado educativa y gratificante, mejorando las habilidades técnicas y la comprensión del diseño de circuitos impresos.
+                            
+                            En resumen, este proyecto no solo ha cumplido con sus objetivos, sino que también ha proporcionado un aprendizaje valioso y ha demostrado la capacidad para llevar a cabo proyectos tecnológicos complejos de manera exitosa. Este wearable con sensores y controlado por Attiny 85 representa un logro significativo en el campo de la electrónica y la tecnología ponible.</p>
+                       
                         
 
                         <p id="referencias">
